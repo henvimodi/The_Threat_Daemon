@@ -1,0 +1,25 @@
+.project-form-container {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 95vh;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.project-form-container  .title-btn {
+    background-color: blueviolet;
+    border: none;
+    padding: 5px 22px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.project-form-container .title-btn:hover,.title-btn:focus {
+    background-color: rgb(40, 39, 42);
+    outline: none;
+}

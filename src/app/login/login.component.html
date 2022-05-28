@@ -1,0 +1,56 @@
+<div class="form">
+    <div class="left-side px-5 pt-2">
+        <img class="login-logo" src='/assets/images/logo.png' alt="logo" />
+        <div class="text-center font-text f-text-24-600 pb-3">
+            Welcome To Threat Daemon
+        </div>
+        <div class="font-text f-text-16-600 ">
+            Threat Daemon is a unified threat modeling tool for managing your
+            application design architecture, documentation and security management
+            on a unite platform. It supports various Threat Modeling methodologies
+            such as STRIDE, Attack Tree, DREAD, PASTA and CVSS.
+        </div>
+        <div class="f-text-16-600 pt-4 font-text">We believed in a unique and effective unified approach.</div>
+        <div class="f-text-16-600 pt-2 font-text">By using Threat Daemon you can :</div>
+        <ul class="font-text f-text-14-700">
+
+            <li><span>Generate a threat model within minutes</span></li>
+            <li><span>Manage Threat, Vulnerabilities, Risk and its countermeasures on an single platform.</span></li>
+            <li><span>Reduce overall risk by remediating identified threats.</span></li>
+            <li><span>Create a culture of collaboration between security and development teams.</span></li>
+            <li><span>Save cost, time and development rework.</span></li>
+        </ul>
+
+        <div class="f-text-12-400 mt-5 let-started-font text-right">
+            Let's get Started...
+        </div>
+    </div>
+    <div class="right-side">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div class="heading text-center mb-5">
+                <h3>Log in</h3>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="loginId" autocomplete="false" placeholder="username" formControlName="loginId"
+                    class="form-control" />
+                <!-- <span  class="help-block text-warning" >Please Enter A Valid UserName!!!</span> -->
+            </div>
+            <div class="form-group mt-2">
+
+                <input type="password" id="pass" autocomplete="false" formControlName="password" placeholder="password"
+                    class="form-control" />
+                <!-- <span *ngIf = "!loginForm.get('userData.password').valid && loginForm.get('userData.password').touched" class="help-block text-warning" >Please Enter A Valid Password!!!</span> -->
+            </div>
+            <div class="mt-4 text-center login-btn-wrap">
+                <button class="login-btn" type="submit" >Login</button>
+            </div> 
+            <div class="mt-3">
+                <p class="f-text-10-700">Didn't have an account?<a href="#" class="f-text-12-400"> Register</a></p>
+            </div>
+        </form>
+
+
+    </div>
+</div>

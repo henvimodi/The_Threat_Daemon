@@ -1,0 +1,42 @@
+<div class="user-setting-form-container">
+
+    <div class="float-right mr-3 mt-3 cursor-pointer" (click)="onCloseClick()"><i class="fa fa-close"></i></div>
+    <form [formGroup]="userSettingForm" (ngSubmit)="onSubmit()">
+
+        <div class="text-center pt-5">
+            <h3>Edit Profile</h3>
+        </div>
+        <div class="b-b mb-5"></div>
+        <div class="container">
+
+            <div class="user-img">user image
+                <img src="/assets/images/logo.svg"/>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="text" formControlName="username" placeholder='user Name'
+                            class="form-control" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="text" formControlName="fullname" placeholder='Full Name'
+                            class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mt-2">
+                <input type="text" class='form-control' placeholder="Email id" 
+                    formControlName="emailId" />
+            </div>
+
+
+            <div class='row mt-5 justify-content-center'>
+                <button type='submit' class="cursor-pointer title-btn">Edit</button>
+            </div>
+        </div>
+    </form>
+</div>

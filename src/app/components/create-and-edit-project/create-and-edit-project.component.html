@@ -1,0 +1,71 @@
+<div class="project-form-container">
+
+    <div class="float-right mr-3 mt-3 cursor-pointer" (click)="onCloseClick()"><i class="fa fa-close"></i></div>
+    <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+
+        <div class="text-center pt-5">
+            <h3>Create and Edit Project</h3>
+        </div>
+        <div class="b-b mb-5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="text" formControlName="projectName" placeholder='Project Name'
+                            class="form-control" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="text" formControlName="creatorName" placeholder='Creator Name'
+                            class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="text" formControlName="assignedTo" placeholder='Assigned to'
+                            class="form-control" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mt-2">
+                        <input type="date" formControlName="creationDate" placeholder='Assigned to'
+                            class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <textarea type="text" class='form-control' placeholder='Description' rows="4"
+                    formControlName="description">
+                </textarea>
+            </div>
+
+            <div class="mt-2">
+                <input type="file" name="file" formControlName="fileUrl" (change)="onChangeFile($event)" />
+            </div>
+
+            <div class="mt-2 row">
+                <div class='col-12'>
+                    download Templates
+                    <div class='row'>
+                        <div class='col-2'><i class="fa fa-download cursor-pointer"></i>&nbsp;SRS</div>
+                        <div class='col-2'><i class="fa fa-download cursor-pointer"></i>&nbsp;FRD</div>
+                        <div class='col-2'><i class="fa fa-download cursor-pointer"></i>&nbsp;AI</div>
+                        <div class='col-2'><i class="fa fa-download cursor-pointer"></i>&nbsp;DG</div>
+                        <div class='col-2'><i class="fa fa-download cursor-pointer"></i>&nbsp;O</div>
+                        <div class='col-2'></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='row mt-5 justify-content-center'>
+                <button type='submit' class="cursor-pointer title-btn">submit</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,146 @@
+<div class="project-container" >
+    <div class="title-wrapper d-flex">
+      <div class="title-text">Welcome To Threat Daemon </div>
+      <div class="wrapper-btn">
+          <button class="title-btn cursor-pointer" (click)="openUserModel(template)" >
+            <i class="fa fa-user"></i></button>
+      </div>
+    </div>
+
+    <ng-template #template let-modal>
+      <div class="modal-header">
+        <div class="close pull-right cursor-pointer" (click)="modalRef.hide()">
+            <i class="fa fa-close"></i>
+        </div>
+      </div>
+    
+      <div class="modal-body">
+        <div class="b-b p-2 cursor-pointer" (click)="userProfileClick()">
+          user Profile
+        </div>
+        <div class="p-2 cursor-pointer" (click)="logout()">
+          Logout
+        </div>
+      </div>
+    </ng-template> 
+
+    <div class="ac-wrapper">
+      <div class="ac-name">
+        <h6>
+          User Name : <span class="text-primary"> ADMIN</span>
+        </h6>
+        <h6>  User Id : 01</h6>
+      </div>
+      <form class="form-inline md-form form-sm mt-0 search-box">
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+        <i class="fa fa-search cursor-pointer" aria-hidden="true"></i>
+      </form>
+      <div class="date-wrapper">
+
+        <div class="p-2 bd-highlight">
+        <button class="title-btn cursor-pointer" (click)="logout()" >Import</button> &nbsp; &nbsp;
+        <button class="title-btn cursor-pointer" (click)="newProjectClick()" >New Project</button>
+        </div>
+      </div>
+    </div>
+
+    <table class="table secondary mt-3">
+      <thead>
+        <tr>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">text</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-id="1">
+          <td data-field="name"></td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td>
+            <a class="button button-small edit" title="Edit">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        <tr data-id="2">
+          <td data-field="name"></td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td>
+            <a class="button button-small edit" title="Edit">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        <tr data-id="3">
+          <td data-field="name"></td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td>
+            <a class="button button-small edit" title="Edit">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        <tr data-id="4">
+          <td data-field="name"></td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td>
+            <a class="button button-small edit" title="Edit">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        <tr data-id="5">
+          <td data-field="name">123</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td data-field="name">text</td>
+          <td>
+            <a class="button button-small edit" title="Edit">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="total-wrapper">
+      <div class="total">300.00</div>
+      <div class="total">45.50.000 </div>
+      <div class="total">TOTAL</div>
+      <div class="total">1520.60</div>
+      <div class="total">12.38.000</div>
+    </div>
+  </div>
