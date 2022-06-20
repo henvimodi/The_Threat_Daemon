@@ -1,7 +1,16 @@
+@import '../../variable.scss';
+
 .fa-angle-double-left,
 .fa-angle-double-right {
     font-size: 20px;
     display: contents;
+}
+
+.content-wrapper {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    margin: 15px;
+    width: -webkit-fill-available;
+    background-color: #fff;
 }
 
 .header {
@@ -166,6 +175,7 @@
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    color: $text-link;
 }
 
 .t-dropdown:hover .dropdown-content {

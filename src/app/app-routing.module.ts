@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChartsComponent } from './components/charts/charts.component';
 import { CreateAndEditProjectComponent } from './components/create-and-edit-project/create-and-edit-project.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';

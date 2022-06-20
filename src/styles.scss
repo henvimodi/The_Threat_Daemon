@@ -1,5 +1,7 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700");
+@import './variable.scss';
+
 *,*::after,*::before{
   margin: 0;
   padding: 0;
@@ -67,5 +69,18 @@ body {
 }
 
 .b-b {
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid $border;
+}
+
+.text-link {
+  cursor: pointer;
+  color: $default-font-color;
+}
+
+.text-link:hover {
+  color: $text-link;
+}
+
+.theme-color {
+  color: $theme-color;
 }

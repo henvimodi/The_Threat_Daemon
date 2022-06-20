@@ -8,33 +8,32 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./project-list.component.scss']
 })
 export class ProjectListComponent implements OnInit {
-
   modalRef: BsModalRef;
   constructor(private router:Router,
-    private modalService:BsModalService,
-    ) { }
+    private modalService:BsModalService) { }
 
   ngOnInit(): void {
   }
 
   logout() {
-    this.modalRef.hide();
     this.router.navigate([""]);
     localStorage.clear();
   }
 
-  openUserModel(template: TemplateRef<any>) {
-      this.modalRef = this.modalService.show(template);
-  }
 
   newProjectClick() {
     this.router.navigate(['/create-and-edit-project']);
   }
 
   userProfileClick() {
-    this.modalRef.hide();
     this.router.navigate(['/user-profile']);
   }
 
+  openUserModel(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+  }
 
+  onClickDashboard() {
+    this.router.navigate(['/dashboard']);
+  }
 }

@@ -17,56 +17,56 @@
                 </li>
 
                 <li>
-                    <a href="#" class="collapsed active nav-link">
+                    <a routerLink="/dashboard" class="collapsed active nav-link">
                         <i class="fa fa-th-large"></i>
                         <span class="nav-label"> Reference Docs</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-book"></i>
                         <span class="nav-label">Architecture</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-book"></i>
                         <span class="nav-label">Threats</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-user"></i>
                         <span class="nav-label">Vulnerabilities</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-home"></i>
                         <span class="nav-label">Risks Calculation </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-credit-card-alt"></i>
                         <span class="nav-label">Traceability Matrix </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard"class="nav-link">
                         <i class="fa fa-file-text"></i>
                         <span class="nav-label">Mitigations & Countermeasures</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a routerLink="/dashboard" class="nav-link">
                         <i class="fa fa-file-video-o"></i>
                         <span class="nav-label">Help </span>
                     </a>
@@ -79,9 +79,9 @@
                 <div class="t-dropdown position-relative">
                     <p class="text-dropdown mb-0 ml-4">Text</p>
                     <div class="dropdown-content position-absolute" style="left: 0;">
-                        <a href="#">Item 1</a>
-                        <a href="#">Item 2</a>
-                        <a href="#">Item 3</a>
+                        <a routerLink="/dashboard">Item 1</a>
+                        <a routerLink="/dashboard">Item 2</a>
+                        <a routerLink="/dashboard">Item 3</a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between  align-items-center " style="width: 100px;">
@@ -92,14 +92,15 @@
                             <span class="text-dropdown "></span>
                         </div>
                         <div class="dropdown-content position-absolute" style="right:0;">
-                            <a href="#" (click)="logout()">Logout</a>
+                            <a class="text-link" (click)="logout()">Logout</a>
+                            <a class="text-link" (click)="userProfileClick()">User Profile</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-
-            </div>
+            <div class="content-wrapper">
+                <app-charts></app-charts>
+            </div> 
         </div>
     </aside>
 </div>

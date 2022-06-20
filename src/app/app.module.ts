@@ -10,6 +10,7 @@ import { CreateAndEditProjectComponent } from './components/create-and-edit-proj
 import { ChartsComponent } from './components/charts/charts.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ReactiveFormsModule,
     ModalModule.forRoot(),
     FormsModule,
+    NgxChartsModule, 
     AppRoutingModule
   ],
   providers: [],
